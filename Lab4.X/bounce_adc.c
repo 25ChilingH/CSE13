@@ -25,7 +25,7 @@ typedef struct ADCResult {
 } ADCResult;
 
 // **** Define global, module-level, or external variables here ****
-ADCResult ADC;
+static ADCResult ADC;
 
 
 // **** Declare function prototypes ****
@@ -72,7 +72,7 @@ int main(void)
     while (1) {
         if (ADC.event) {
             char s[MAX_CHAR_COUNT];
-            sprintf(s, "%f %f%", ADC.voltage, ADC.voltage/1023.0*100);
+            sprintf(s, "%d %d%", ADC.voltage, ADC.voltage/1023.0*100);
             OledClear(OLED_COLOR_BLACK);
             OledDrawString(s);
             OledUpdate();

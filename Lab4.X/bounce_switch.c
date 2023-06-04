@@ -25,7 +25,7 @@ typedef struct Timer {
 
 
 // **** Define global, module-level, or external variables here ****
-Timer Timer1;												 
+static Timer Timer1;												 
 
 // **** Declare function prototypes ****
 

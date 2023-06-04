@@ -32,9 +32,9 @@ enum Led {
 };
 
 // **** Define global, module-level, or external variables here ****
-Timer TimerA;
-Timer TimerB;
-Timer TimerC;
+static Timer TimerA;
+static Timer TimerB;
+static Timer TimerC;
 
 // **** Declare function prototypes ****
 

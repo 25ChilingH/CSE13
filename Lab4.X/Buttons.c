@@ -1,8 +1,8 @@
 #include "Buttons.h"
 #include "BOARD.h"
 
-uint8_t counter;
-uint8_t prevButtonsState;
+static uint8_t counter;
+static uint8_t prevButtonsState;
 
 void ButtonsInit(void) {
     TRISD |= 0x00E0;
